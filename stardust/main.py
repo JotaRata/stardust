@@ -210,7 +210,7 @@ class ctf(object):
                     #wav_num =  ''.join(filter(str.isdigit, wav_str) ) #Make sure that only numbers are used
                     self.sfx.append(wav_str)
                     #self.sfx.append(lspl[index+1])
-        self.sfx=1e-4*np.float_(self.sfx) #Convert central wavelength to microns
+        self.sfx = 1e-4 * np.float64(self.sfx) #Convert central wavelength to microns
 
 
         assert len(self.fnames)==len(band_names)==len(err_band_names),'ERROR: Filter range does not match available photometry, check band names'
